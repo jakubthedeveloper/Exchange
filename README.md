@@ -1,5 +1,7 @@
 # Exchange
 
+[![Build Status](https://travis-ci.org/jakubthedeveloper/Exchange.svg?branch=master)](https://travis-ci.org/jakubthedeveloper/Exchange)
+
 ## Installation
 
 ```shell script
@@ -29,8 +31,4 @@ $exchange->exchange($usd, $yuan, 17.23); // 117.5086
 $exchange->exchange($yuan, $usd, 223.46); // 33.519
 ```
 
-## Run Tests
-```shell script
-./vendor/bin/phpunit tests
-```
 
