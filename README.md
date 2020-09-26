@@ -11,6 +11,11 @@ composer install jakub-the-developer/exchange
 ## Usage
 
 ```php
+use JakubTheDeveloper\Exchange\Exchange;
+use JakubTheDeveloper\Exchange\Currency;
+use JakubTheDeveloper\Exchange\ExchangeRate;
+use JakubTheDeveloper\Exchange\ExchangeRates;
+
 $euro = new Currency('EUR');
 $gbp = new Currency('GBP');
 $usd = new Currency('USD');
