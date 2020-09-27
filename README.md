@@ -5,7 +5,7 @@
 ## Installation
 
 ```shell script
-composer install jakub-the-developer/exchange
+composer require jakub-the-developer/exchange
 ```
 
 ## Usage
