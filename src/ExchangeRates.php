@@ -4,6 +4,7 @@
 namespace JakubTheDeveloper\Exchange;
 
 use JakubTheDeveloper\Exchange\Exception\InvalidExchangeRateException;
+use JakubTheDeveloper\Exchange\Exception\InvalidTypeException;
 use JakubTheDeveloper\Exchange\Exception\NotImplementedException;
 
 class ExchangeRates
@@ -20,7 +21,7 @@ class ExchangeRates
     {
         foreach ($rates as $rate) {
             if (!$rate instanceof ExchangeRate) {
-                throw new \Exception("Rate should be an instance of ExchangeRate, got " . (get_class($rate) ?: 'empty') . ".");
+                throw new InvalidTypeException("Rate should be an instance of ExchangeRate, got " . (is_object($rate) ? get_class($rate) : $rate) . ".");
             }
 
             $this->rates[$rate->getKey()] = $rate;

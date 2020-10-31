@@ -1,0 +1,22 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="tests">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+
+  <coverage cacheDirectory="coverage/cache"
+          includeUncoveredFiles="true"
+          processUncoveredFiles="true"
+          pathCoverage="false"
+          ignoreDeprecatedCodeUnits="true"
+          disableCodeCoverageIgnore="true">
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+
+    <report>
+      <html outputDirectory="coverage/html" lowUpperBound="50" highLowerBound="90"/>
+    </report>
+  </coverage>
+</phpunit>
