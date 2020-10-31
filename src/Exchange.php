@@ -2,7 +2,8 @@
 
 namespace JakubTheDeveloper\Exchange;
 
-class Exchange {
+class Exchange
+{
     /** @var ExchangeRates */
     private ExchangeRates $exchangeRates;
 

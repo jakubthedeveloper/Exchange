@@ -2,6 +2,6 @@
 
 namespace JakubTheDeveloper\Exchange\Exception;
 
-class InvalidTypeException extends \Exception {
-
+class InvalidTypeException extends \Exception
+{
 }

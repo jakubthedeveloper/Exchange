@@ -2,6 +2,6 @@
 
 namespace JakubTheDeveloper\Exchange\Exception;
 
-class NotImplementedException extends \Exception {
-
+class NotImplementedException extends \Exception
+{
 }
