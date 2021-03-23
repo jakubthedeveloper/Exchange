@@ -1,6 +1,5 @@
 <?php
 
-
 namespace JakubTheDeveloper\Exchange;
 
 class Currency
